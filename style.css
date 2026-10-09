@@ -1,0 +1,71 @@
+/* Cosmic Merge -- PewPlay edition. The canvas and the UI layer fill the page. */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    height: 100dvh;
+    overflow: hidden;
+    overscroll-behavior: none;
+    background: #080614;
+}
+body {
+    position: fixed;
+    inset: 0;
+}
+canvas,
+main {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    word-break: break-word;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: none;
+}
+main {
+    cursor: crosshair;
+}
+main button,
+#sound {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+}
+#sound {
+    position: absolute;
+    top: max(12px, 2vmin, env(safe-area-inset-top));
+    right: max(14px, 2.5vmin, env(safe-area-inset-right));
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border-radius: 50%;
+    border: 2px solid #4a4270;
+    background: #14102bcc;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    user-select: none;
+    -webkit-user-select: none;
+}
+#sound:hover {
+    border-color: #ff9ecd;
+}
+#sound:focus-visible {
+    outline: 2px solid #ff9ecd;
+    outline-offset: 2px;
+}
+#sound .off,
+#sound.muted .on {
+    display: none;
+}
+#sound.muted .off {
+    display: inline;
+}

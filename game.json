@@ -1,0 +1,43 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pewplay/pewplay/main/schema/game.schema.json",
+  "title": "Cosmic Merge",
+  "description": "Drop cute cosmic blobs from a cloud circling the screen and merge matching pairs in a spinning gravity well. Free to play in your browser.",
+  "about": "Cosmic Merge is a merge puzzle with the box turned inside out. There are no walls and no floor: a little cloud rides a ring around the edge of space, and everything it drops falls toward the middle, where the pieces pack into a lumpy, slowly turning ball.\n\nTouch two blobs of the same kind and they pop into the next one, from a tiny Sparkle through Stars, Moons, Comets and Galaxies up to the Cosmic Unicorn. Elements shrink near the center and swell near the rim, two dead stars sit in the way, and a quick sweep before you let go throws a piece in sideways to spin the whole pile. If the pile leans on the glowing ring for three seconds, the run is over.\n\nOriginally created by Staś Małolepszy and Michał Budzyński for js13kGames 2026 as garrulus.",
+  "howToPlay": "Move the cloud around the ring to choose where the next element enters, then release to drop it toward the center. Two elements of the same color merge into the next, bigger one and score points. Sweep the pointer along the ring just before releasing to fling the element sideways and spin the pile. The run ends when the pile presses on the outer glowing ring for three seconds in a row.",
+  "controls": [
+    { "input": "Mouse move", "action": "Move the cloud around the ring" },
+    { "input": "Click (release)", "action": "Drop the next element" },
+    { "input": "Touch and drag", "action": "Aim the cloud; lift your finger to drop" },
+    { "input": "Swipe along the ring", "action": "Fling the element sideways to spin the pile" },
+    { "input": "Enter / Space", "action": "Start or restart a run" }
+  ],
+  "tips": [
+    "Drop each element on the side where a matching color already sits, so it merges on arrival instead of crowding the ring.",
+    "Elements grow as they drift outward, so keep big pieces near the center and drop small ones on the edges.",
+    "When the ring starts to glow red, make a merge quickly: the danger timer drains twice as fast as it fills.",
+    "Avoid dropping right behind a dead star, where elements get stuck far from the middle and swell into the ring."
+  ],
+  "faq": [
+    {
+      "question": "Is Cosmic Merge free to play?",
+      "answer": "Yes, Cosmic Merge is completely free and runs right in your browser with nothing to install."
+    },
+    {
+      "question": "Can I play Cosmic Merge on my phone or tablet?",
+      "answer": "Yes. Drag your finger to move the cloud around the ring and lift it to drop; the arena scales to fit both portrait and landscape screens."
+    },
+    {
+      "question": "What happens when two Cosmic Unicorns meet?",
+      "answer": "They vanish in a burst of light for a big bonus, freeing up room so the run can keep going."
+    }
+  ],
+  "category": "Puzzle",
+  "tags": ["merge", "physics", "puzzle", "gravity", "casual", "space"],
+  "author": "Staś Małolepszy and Michał Budzyński",
+  "playMode": "SinglePlayer",
+  "orientation": "any",
+  "cover": "cover.png",
+  "screenshots": ["screenshots/1.png", "screenshots/2.png", "screenshots/3.png"],
+  "added": "2026-10-09",
+  "draft": false
+}
